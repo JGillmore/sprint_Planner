@@ -4,7 +4,7 @@ var TaskSchema = mongoose.Schema({
   item: String,
   status: String,
 },{
-  timestamp:true
+  timestamps:true
 });
 
 mongoose.model("Task", TaskSchema);

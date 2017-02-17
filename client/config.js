@@ -1,5 +1,4 @@
-var app = angular.module("SprintApp", ["ngRoute"]);
-console.log("Creating App");
+var app = angular.module("sprintApp", ["ngRoute"]);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/", {
@@ -10,5 +9,4 @@ app.config(function ($routeProvider) {
         controller: "createTaskController"
     });
 
-    console.log("Configuring Routes")
 });

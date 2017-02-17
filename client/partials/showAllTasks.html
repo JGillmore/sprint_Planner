@@ -1,0 +1,13 @@
+<h2>Todo</h2>
+<ul>
+  <li ng-repeat='task in tasks | filter:{status:"todo"}'>{{task.item}} <button ng-click="update(task._id,'doing')">Doing</button></li>
+</ul>
+<h2>Doing</h2>
+<ul>
+  <li ng-repeat='task in tasks | filter:{status:"doing"}'>{{task.item}}<button ng-click="update(task._id,'done')">Done</button></li>
+</ul>
+<h2>Done</h2>
+<ul>
+  <li ng-repeat='task in tasks | filter:{status:"done"}'>{{task.item}}<button ng-click="update(task._id,'hidden')">Hide</button></li>
+</ul>
+<a href='/#!/create'>Add a task</a>
