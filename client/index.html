@@ -1,1 +1,16 @@
-<h1>WELCOME</h1>
+<html ng-app='sprintApp'>
+<head>
+  <meta charset='utf-8'>
+  <title>Sprint Planner</title>
+  <script src="angular/angular.js"></script>
+  <script src="angular-route/angular-route.js"></script>
+  <script src="config.js"></script>
+  <script src="factories/{{fillin}}"></script>
+  <script src="controllers/{{fillin}}"></script>
+</head>
+<body>
+  <h3><a href='#!'>Agile Sprint Planner</a></h3>
+  <div ng-view="">
+  </div>
+</body>
+</html>
